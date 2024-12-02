@@ -1,0 +1,35 @@
+.box_main {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#28b550, #d3fadf);
+}
+
+.son_box {
+    /* background-color: black; */
+    width: 70vW;
+    height: 60vh;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mini_box{
+    border: 1px solid;
+    border-radius: 10px;
+    width: 30%;
+    height: 90%;
+    background: linear-gradient(#ffffff, #869189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.small_div { 
+    width: 500px;
+}
+
+h1{
+    color: white;
+}

@@ -1,0 +1,22 @@
+.error{
+    color: rgb(206, 56, 56);
+}
+
+.box_biggest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form_padre {
+    width: 30vw;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+.margin_divs {
+    margin: 20px;
+}
