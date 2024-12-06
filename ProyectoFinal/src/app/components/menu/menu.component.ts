@@ -22,4 +22,7 @@ export class MenuComponent {
   redirigir2(){
     this.router.navigate(['/database'])
   }
+  redirigir3(){
+    this.router.navigate(['/searchproduct'])
+  }
 }

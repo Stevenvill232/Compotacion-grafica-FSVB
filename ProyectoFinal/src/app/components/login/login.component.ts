@@ -28,10 +28,6 @@ export class LoginComponent {
   redirigir() {
     const validUser = 'admin';
     const validPassword = 'admin';
-    console.log(this.username)
-    console.log(this.password)
-    console.log(validUser)
-    console.log(validPassword)
     
 
     if (this.username === validUser && this.password === validPassword) {

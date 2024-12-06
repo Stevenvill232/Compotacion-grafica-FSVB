@@ -1,12 +1,6 @@
-.box_main {
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(#28b550, #d3fadf);
-}
-
 .son_box {
     /* background-color: black; */
-    width: 70vW;
+    width: 100%;
     height: 60vh;
     padding: 50px;
     display: flex;
@@ -15,15 +9,16 @@
 }
 
 .mini_box{
-    border: 1px solid;
+    border: none;
     border-radius: 10px;
-    width: 30%;
+    width: 22%;
     height: 90%;
-    background: linear-gradient(#ffffff, #869189);
+    background: rgb(242, 255, 238);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
 .small_div { 
@@ -31,5 +26,5 @@
 }
 
 h1{
-    color: white;
+    color: black;
 }

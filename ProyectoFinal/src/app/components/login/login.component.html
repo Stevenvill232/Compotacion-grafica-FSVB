@@ -1,10 +1,13 @@
 
 <div class="flex align-items-center	justify-content-center flex-column box_main" [formGroup]="user">
+    <div>
+        <p>Usuario y contrasena: admin</p>
+    </div>
     <div class="son_box">    
-        <h1 class="mt-4 mb-3">DerbySan Farma</h1>
+        <h1 class="mt-4 mb-4">DerbySan Farma</h1>
         <div class="p-3 w-full" >
             <label for="">Username</label>
-            <div class="w-full mt-3">
+            <div class="w-full mt-1">
                 <input type="text" id="username" [(ngModel)]="username" class="w-full"  pInputText  placeholder="Username" name="username" formControlName="username">
             </div>
             <div *ngIf="user.controls['username'].invalid && user.controls['username'].touched" class="error">
@@ -13,7 +16,7 @@
         </div>
         <div class="flex flex-column p-3">
             <label for="">Contraseña</label>
-            <div class="p-field  mt-3">
+            <div class="p-field  mt-1">
                 <input type="password"  [(ngModel)]="password" class="w-full" pInputText name="password" formControlName="password" placeholder="Contraseña">
             </div>
             <div *ngIf="user.controls['password'].invalid && user.controls['password'].touched" class="error">

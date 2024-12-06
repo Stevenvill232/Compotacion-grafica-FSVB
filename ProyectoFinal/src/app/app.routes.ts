@@ -6,6 +6,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { MenuComponent } from './components/menu/menu.component';
 import { CreateComponent } from './components/create/create.component';
 import { DatabaseComponent } from './components/database/database.component';
+import { UpdateComponent } from './components/update/update.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 
@@ -38,6 +40,14 @@ export const routes: Routes = [
     {
         path: 'database',
         component: DatabaseComponent
+    },
+    {
+        path: 'update/:id',
+        component: UpdateComponent
+    }, 
+    {
+        path: 'searchproduct',
+        component: SearchComponent
     }
 ];
 

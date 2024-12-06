@@ -6,7 +6,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
+    margin-top: 10rem;
 }
 
 .form_padre {
@@ -15,6 +16,7 @@
     padding: 20px;
     border: 2px solid;
     border-radius: 20px;
+    background-color:  rgb(242, 255, 238);
 }
 
 .margin_divs {
