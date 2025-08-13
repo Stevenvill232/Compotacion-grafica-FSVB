@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    padding: 10px;
+    gap: 10px;
+}
+
+.logo {
+    background-color: orange;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.titulo-header {
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+.buscador {
+    background-color: white;
+    padding: 10px;
+    width: 150px;
+}
+
+
+.contenedor {
+    display: flex;
+    background-color: rgb(48, 48, 247);
+    padding: 10px;
+    flex: 1; 
+}
+
+.sidebar {
+    background-color: grey;
+    color: white;
+    padding: 20px;
+    width: 150px;
+    flex-shrink: 0;
+    text-align: center;
+    align-content: center;
+    margin-right: 40px;
+    margin-top: 35px;
+    
+}
+
+.content {
+    background-color: green;
+    color: white;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    margin-top: 35px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    padding: 30px;
+    gap: 30px;
+}
+
+.footer-main {
+    background-color: orange;
+    color: white;
+    padding: 20px;
+}
+
+.footer-box {
+    background-color: grey;
+    padding: 30px;
+    color: white;
+    flex: 1;
+    text-align: center;
+    height: 40px;
+}
