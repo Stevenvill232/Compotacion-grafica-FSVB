@@ -1,0 +1,86 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    /*Practica clase */
+    --color-fondos: #2fba7c;
+    --color-primario: #fa5353;
+    --font-family-1: 'Roboto';
+    --font-size: 20;
+    --color-1-azul: #2206ac;
+    /* Titulo H2*/
+    --color-titulo: #ff4900;
+    --fuente-titulo: 2rem;
+    /* Primer parrafo */
+    --tamaño-fuente-parrafo: 16px;
+    --color-parrafo: #0093FF;
+    --fuente-parrafo: 'Arial';
+    /* Segundo parrafo */
+    --tamaño-fuente-parrafo2: 12px;
+    --color-parrafo2: #c500ff;
+    /* Links */
+    --color-link:  #001bff;
+    --fuente-link: 'Bold';
+    /* Tabla */
+    --color-encabezado:  #000000;
+    --fuente-encabezado-color-tabla:  #ffffff;
+    --tamaño-fuente-encabezado-tabla: 1.5rem;
+    --color-fondo-PrimeraTercera-tabla: #bec1c3;
+    --fuente-color-tabla: black;
+    --tamaño-fuente-tabla: 1.5rem;
+    --filaCentral-color-tabla: #045795;
+    --filaCentral-fuente-color-tabla: white;
+    --filaCentral-tamaño-fuente: 1.5rem; 
+}
+
+/* Practica en clase*/
+.miclase{
+    background-color: var(--color-1);
+}
+
+html,body{
+    margin: 0;
+}
+
+h2{
+    color: var(--color-titulo);
+    font-size: var(--fuente-titulo);
+}
+
+.p1{
+    font-size: var(--tamaño-fuente-parrafo);
+    color: var(--color-parrafo);
+    font-family: var(--fuente-parrafo);
+}
+
+.p2{
+    font-size: var(--tamaño-fuente-parrafo2);
+    color: var(--color-parrafo2);
+    font-family: 'Nerko One';
+}
+
+a{
+    color: var(--color-link);
+    font-family: var(--fuente-link);
+    text-decoration: none;
+}
+
+th{
+    color: var(--fuente-encabezado-color-tabla);
+    background-color: var(--fuente-color-tabla);
+    font-size: var(--tamaño-fuente-encabezado-tabla);
+}
+tr:nth-child(2), tr:nth-child(4) {
+    background-color: var(--color-fondo-PrimeraTercera-tabla);
+    color: var(--fuente-color-tabla);
+    font-size: var(--tamaño-fuente-tabla);
+}
+tr:nth-child(3) {
+    background-color: var(--filaCentral-color-tabla);
+    color: var(--filaCentral-fuente-color-tabla);
+    font-size: var(--filaCentral-tamaño-fuente);
+}
+
+a:visited { color: #4CAF50; }
+a:hover {
+color: #ff6600;
+text-decoration: underline
+} 
