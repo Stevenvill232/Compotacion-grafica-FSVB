@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --color-fondos: #2fba7c;
+    --color-primario: #fa5353;
+    --font-family-1: 'Roboto';
+    --font-size: 20;
+    --color-1: #5065ce;
+}
+
+.miclase{
+    background-color: var(--color-1);
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #2fba7c;
+    color: black;
+    font-size: var(--font-size);
+}
+ 
