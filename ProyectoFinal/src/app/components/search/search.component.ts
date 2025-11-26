@@ -61,6 +61,9 @@ export class SearchComponent {
       },
     });
   }
+  goBack() {
+  window.history.back();
+  }
   
   searchProductByName(): void {
     if (!this.productName) {

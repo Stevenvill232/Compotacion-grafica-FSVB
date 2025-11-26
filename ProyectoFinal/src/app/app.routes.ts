@@ -10,7 +10,6 @@ import { UpdateComponent } from './components/update/update.component';
 import { SearchComponent } from './components/search/search.component';
 
 
-
 export const routes: Routes = [
     {
         path: 'login',
@@ -48,6 +47,10 @@ export const routes: Routes = [
     {
         path: 'searchproduct',
         component: SearchComponent
+    },
+    {
+        path: 'register',
+        loadComponent: () => import('../../src/app/components/register/register.component').then(m => m.RegisterComponent)
     }
 ];
 

@@ -31,6 +31,9 @@ export class ManagementComponent {
       }
     });
   }
+  goBack() {
+  this.router.navigate(['/menu']); 
+  }
   update(id: number){
     this.router.navigate(['/update', id])
   }

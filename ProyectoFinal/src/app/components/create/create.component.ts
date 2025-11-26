@@ -32,6 +32,9 @@ export class CreateComponent {
 
     })
   }
+  volver() {
+    window.history.back();
+  }
   onSubmit(){
     if (this.form1.valid){
       const {comercialname,genericname,quantity,lote,price,description,pharmaceuticform,cum,finaldate} = this.form1.value;

@@ -1,5 +1,17 @@
-<div class="flex justify-content-center align-items-center mb-3">
-    <h1>Gestion</h1>
+<div class="flex flex-column justify-content-center align-items-center mb-3">
+     <button 
+        pButton 
+        class="p-button-rounded p-button-text back-btn" 
+        icon="pi pi-arrow-left"
+        (click)="goBack()">
+    </button>
+    <h1 class="title">Gestión</h1>
+
+    <img 
+        src="https://www.tevafarmacia.es/sites/default/files/styles/tv/public/tv-post-images/2023-03/KPI%20para%20farmacia.jpg.webp?itok=7JBO-x7Y" 
+        alt="Inventario" 
+        class="inventory-image" 
+    />
 </div>
 <p-table 
     [value]="products" 

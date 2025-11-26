@@ -9,7 +9,7 @@ namespace ProyectoFinal.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        private readonly string _connectionString = "Server=DESKTOP-DC51TB0\\MSSQLSERVER1;Database=products;User Id=sa;Password=12345;TrustServerCertificate=true;";
+        private readonly string _connectionString = "Server=LAPTOP-GHQBCISV\\MSSQLSERVER01;Database=products;User Id=sa;Password=12345678;TrustServerCertificate=true;";
 
         [HttpPost("Agregar")]
         public IActionResult Send([FromBody] AddProducts product)

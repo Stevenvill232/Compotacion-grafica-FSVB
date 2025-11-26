@@ -1,50 +1,80 @@
 <div class="filter-users-container">
+
+    <button 
+        pButton 
+        class="p-button-rounded p-button-text back-btn" 
+        icon="pi pi-arrow-left"
+        (click)="goBack()">
+    </button>
+
     <div class="search-class">
-        <div class="flex justify-content-center align-items-center flex-column">
-            <h2 class="mb-3">Buscar producto por ID</h2>
-            <div>
-                <input 
-                    pInputText
-                    type="number"
-                    placeholder="Ingresa el ID del usuario"
-                    [(ngModel)]="productId"
-                />
-                <button pButton 
-                    type="button"
-                    label="Buscar"
-                    class="btn_dark"
-                    (click)="searchProductById()"
-                ></button>
-            </div>
+
+        <!-- Buscar por ID -->
+        <div class="search-box flex flex-column justify-content-center align-items-center">
+            <h1 class="search-title">Buscar por ID</h1>
+
+            <img 
+                src="https://cdn-icons-png.flaticon.com/512/679/679720.png"
+                class="search-image"
+                alt="Buscar por ID"
+            />
+
+            <input 
+                pInputText
+                type="number"
+                placeholder="Ingresa el ID del producto"
+                [(ngModel)]="productId"
+                class="input-search"
+            />
+
+            <button pButton 
+                type="button"
+                label="Buscar"
+                class="btn_dark mt-2"
+                (click)="searchProductById()"
+            ></button>
+
             <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
         </div>
-        <div class="flex justify-content-center align-items-center flex-column">
-            <h2 class="mb-3">Buscar producto por nombre</h2>
-            <div>
-                <input 
-                    pInputText
-                    type="text"
-                    placeholder="Ingresa una palabra clave"
-                    [(ngModel)]="productName"
-                />
-                <button pButton 
-                    type="button"
-                    label="Buscar"
-                    class="btn_dark"
-                    (click)="searchProductByName()"
-                ></button>
-                <p *ngIf="errorMessageName" class="error-message">{{ errorMessageName }}</p>
-            </div>
+
+        <!-- Buscar por nombre -->
+        <div class="search-box flex flex-column justify-content-center align-items-center">
+            <h1 class="search-title">Buscar por nombre</h1>
+
+            <img 
+                src="https://cdn-icons-png.flaticon.com/512/751/751463.png"
+                class="search-image"
+                alt="Buscar por nombre"
+            />
+
+            <input 
+                pInputText
+                type="text"
+                placeholder="Ingresa palabra clave"
+                [(ngModel)]="productName"
+                class="input-search"
+            />
+
+            <button pButton 
+                type="button"
+                label="Buscar"
+                class="btn_dark mt-2"
+                (click)="searchProductByName()"
+            ></button>
+
+            <p *ngIf="errorMessageName" class="error-message">{{ errorMessageName }}</p>
         </div>
+
     </div>
-  
+
+
     <p-table
-    *ngIf="products.length"
-    [value]="products" 
-    [paginator]="true" 
-    [rows]="3" 
-    [tableStyle]="{ 'min-width': '50rem', 'max-width': '1200px'}" 
-    styleClass="table_products">
+        *ngIf="products.length"
+        [value]="products" 
+        [paginator]="true" 
+        [rows]="3" 
+        [tableStyle]="{ 'min-width': '50rem', 'max-width': '1200px'}" 
+        styleClass="table_products"
     >
       <ng-template pTemplate="header">
         <tr>
@@ -60,10 +90,11 @@
             <th>Fecha de vencimiento</th>
         </tr>
       </ng-template>
+
       <ng-template pTemplate="body" let-product>
         <tr>
-            <td>{{ product.id}}</td>
-            <td>{{ product.comercialName}}</td>
+            <td>{{ product.id }}</td>
+            <td>{{ product.comercialName }}</td>
             <td>{{ product.genericName }}</td>
             <td>{{ product.quantity }}</td>
             <td>{{ product.lote }}</td>
@@ -75,4 +106,4 @@
         </tr>
       </ng-template>
     </p-table>
-  </div>
+</div>

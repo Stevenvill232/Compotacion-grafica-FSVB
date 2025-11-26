@@ -1,37 +1,47 @@
-<div class="flex align-items-center	justify-content-center flex-column box_main">
-    <h1>Menu Principal</h1>
-    <div class="son_box">  
-        <div class="mini_box">
-            <div>
-                <i class="pi pi-plus" style="font-size: 15rem"></i>
-            </div>
-            <div class="mt-6">
-                <button pButton type="submit" label="Agregar Productos" class="btn_dark" (click)="redirigir()"></button>
-            </div>
+<div class="menu-container">
+
+    <!-- Barra superior -->
+    <div class="topbar">
+        <div class="topbar-right">
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828407.png" class="logout-icon" alt="logout">
+            <button pButton label="Cerrar Sesión" class="logout-btn" (click)="cerrarSesion()"></button>
         </div>
-        <div class="mini_box">
-            <div>
-                <i class="pi pi-th-large" style="font-size: 15rem"></i>
-            </div>
-            <div class="mt-6">
-                <button pButton type="submit" label="Gestion" class="btn_dark"  (click)="redirigir1()"></button>
-            </div>
+    </div>
+
+    <!-- Título -->
+    <h1 class="menu-title">Menú Principal</h1>
+
+    <!-- Imagen central -->
+    <div class="menu-banner">
+        <img src="https://opuspac.com/wp-content/uploads/2024/01/capa-farmacia-clinica.jpg" alt="Farmacia">
+    </div>
+
+    <!-- Cuadrícula del menú -->
+    <div class="menu-grid">
+
+        <!-- Caja 1 -->
+        <div class="menu-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5735/5735394.png" class="menu-icon" alt="Agregar">
+            <button pButton label="Agregar Productos" class="menu-btn" (click)="redirigir()"></button>
         </div>
-        <div class="mini_box">
-            <div>
-                <i class="pi pi-clipboard" style="font-size: 15rem"></i>
-            </div>
-            <div class="mt-6">
-                <button pButton type="submit" label="Inventario" class="btn_dark"  (click)="redirigir2()"></button>
-            </div>
+
+        <!-- Caja 2 -->
+        <div class="menu-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" class="menu-icon" alt="Gestión">
+            <button pButton label="Gestión" class="menu-btn" (click)="redirigir1()"></button>
         </div>
-        <div class="mini_box">
-            <div>
-                <i class="pi pi-search" style="font-size: 15rem"></i>
-            </div>
-            <div class="mt-6">
-                <button pButton type="submit" label="Buscar por Id" class="btn_dark"  (click)="redirigir3()"></button>
-            </div>
+
+        <!-- Caja 3 -->
+        <div class="menu-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/7021/7021224.png" class="menu-icon" alt="Inventario">
+            <button pButton label="Inventario" class="menu-btn" (click)="redirigir2()"></button>
         </div>
+
+        <!-- Caja 4 -->
+        <div class="menu-card">
+            <img src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/1024px/1f50e.png" class="menu-icon" alt="Buscar">
+            <button pButton label="Buscar por ID" class="menu-btn" (click)="redirigir3()"></button>
+        </div>
+
     </div>
 </div>

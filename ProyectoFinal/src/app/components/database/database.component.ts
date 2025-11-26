@@ -19,6 +19,9 @@ export class DatabaseComponent {
   constructor(private producService: ManageProductsService){
     this.loadProducts(); // Cuando se carga la pagina se ejecuta el metodo loadProdcuts
   }
+  goBack() {
+  window.history.back();
+  }
   loadProducts(): void {
     this.producService.getProtucts().subscribe({
       next: (products) => {

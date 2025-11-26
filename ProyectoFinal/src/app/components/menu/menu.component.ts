@@ -10,19 +10,28 @@ import { ButtonModule } from 'primeng/button';
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
-  constructor( private router: Router){}
+  
+  constructor(private router: Router) {}
 
-  redirigir(){
-    this.router.navigate(['/create'])
+  redirigir() {
+    this.router.navigate(['/create']);
   }
 
-  redirigir1(){
-    this.router.navigate(['/management'])
+  redirigir1() {
+    this.router.navigate(['/management']);
   }
-  redirigir2(){
-    this.router.navigate(['/database'])
+
+  redirigir2() {
+    this.router.navigate(['/database']);
   }
-  redirigir3(){
-    this.router.navigate(['/searchproduct'])
+
+  redirigir3() {
+    this.router.navigate(['/searchproduct']);
+  }
+
+  // ✅ ESTA ES LA FUNCIÓN QUE FALTABA DENTRO DE LA CLASE
+  cerrarSesion() {
+    localStorage.clear();
+    this.router.navigate(['/login']);
   }
 }

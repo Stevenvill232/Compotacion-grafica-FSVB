@@ -1,8 +1,45 @@
-.box_biggest{
+.gestion-header {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 90vh;
-    margin-top: 10rem;
+    justify-content: center;
+    position: relative;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+.inventory-image {
+    width: 500px;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+.back-btn {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    padding: 20px 29px;       
+    font-size: 24px;          
+    
+    background-color: #0a0b0b; 
+    color: #fff;             
+    border-radius: 8px;       
+    cursor: pointer;          
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); 
+    
+    /* Transición para suavizar efectos */
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* Mejorar el título */
+.gestion-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}

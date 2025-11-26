@@ -1,12 +1,28 @@
-<div class="flex justify-content-center align-items-center mb-3">
-    <h1>Inventario</h1>
+<div class="flex flex-column align-items-center justify-content-center mb-3">
+
+    <button pButton 
+            icon="pi pi-arrow-left" 
+            class="p-button-rounded p-button-text back-btn"
+            (click)="goBack()">
+    </button>
+
+    <h1 class="title">Inventario</h1>
+
+
+    <img 
+        src="https://www.claroshop.com/c/algolia/assets/portada/farmacia.webp" 
+        alt="Inventario" 
+        class="inventory-image" 
+    />
 </div>
+
 <p-table 
     [value]="products" 
     [paginator]="true" 
     [rows]="3" 
     [tableStyle]="{ 'min-width': '50rem', 'max-width': '1200px'}" 
-    styleClass="table_products">
+    styleClass="table_products shadow"
+>
     <ng-template pTemplate="header">
         <tr>
             <th>Id</th>
@@ -21,6 +37,7 @@
             <th>Fecha de vencimiento</th>
         </tr>
     </ng-template>
+
     <ng-template pTemplate="body" let-product>
         <tr>
             <td>{{ product.id}}</td>

@@ -1,0 +1,45 @@
+.title {
+    font-size: 4rem;
+    font-weight:bolder;
+    margin-bottom: 0.5rem;
+    color: #1e1e1e;
+}
+
+.inventory-image {
+    width: 500px;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+.back-btn {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    padding: 12px 24px;       
+    font-size: 18px;        
+    
+    background-color: #0c0d0f; 
+    color: #fff;              
+    border: none;             
+    border-radius: 8px;       
+    cursor: pointer;          
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #092a4d; 
+    transform: translateY(-50%) scale(1.05); 
+}
+
+.table_products {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.shadow {
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
+}

@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input} from '@angular/core';
-import { FormBuilder, FormGroup, Validators, ReactiveFormsModule} from '@angular/forms';
+import { Component, Input } from '@angular/core';
+import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { Router } from '@angular/router';
-
+import { AuthService } from '../../service/auth.service'; // IMPORTANTE
 
 @Component({
   selector: 'app-login',
@@ -14,29 +14,42 @@ import { Router } from '@angular/router';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+
   @Input() user!: FormGroup;
-  username: string = '';
-  password: string = '';
   errorMessage: string = '';
 
-  constructor(private fb: FormBuilder, private router: Router){
+  constructor(
+    private fb: FormBuilder,
+    private router: Router,
+    private authService: AuthService   // INYECTAR SERVICIO
+  ) {
     this.user = this.fb.group({
       username: ['', Validators.required],
-      password: ['', [Validators.required]]
-    })
+      password: ['', Validators.required]
+    });
   }
-  redirigir() {
-    const validUser = 'admin';
-    const validPassword = 'admin';
-    
 
-    if (this.username === validUser && this.password === validPassword) {
-      console.log('HOlaaa')
-      // Redirigir al dashboard o página principal
-      this.router.navigate(['/menu']);
-    } else {
-      // Mostrar mensaje de error
-      this.errorMessage = 'Usuario o contraseña incorrectos.';
+  redirigir() {
+    if (this.user.invalid) {
+      this.errorMessage = "Complete los campos.";
+      return;
     }
+
+    const data = this.user.value;
+
+    this.authService.login(data).subscribe({
+      next: (res) => {
+        console.log("LOGIN OK: ", res);
+        this.router.navigate(['/menu']);  // REDIRECCIÓN EXITOSA
+      },
+      error: (err) => {
+        console.error(err);
+        this.errorMessage = "Usuario o contraseña incorrectos.";
+      }
+    });
+  }
+
+  redirigir1() {
+    this.router.navigate(['/register']);
   }
 }
