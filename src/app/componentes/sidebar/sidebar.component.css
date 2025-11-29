@@ -1,0 +1,10 @@
+.sidebar-box {
+  width: 200px;
+  height: 450px;
+
+  background: #adadad;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

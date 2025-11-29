@@ -1,0 +1,33 @@
+.footer-container {
+  width: 100%;
+  background: orange;
+  padding: 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.footer-boxes {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-item {
+  width: 160px;
+  height: 120px;
+  background: #b1b1b1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #666;
+}

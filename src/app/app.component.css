@@ -1,0 +1,13 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  background: #3b57c9; /* azul contenedor */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

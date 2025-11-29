@@ -1,0 +1,12 @@
+.contenedor-bar {
+  width: 100%;
+  height: 40px;
+  background: #355ECC;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 10px;
+}

@@ -1,0 +1,11 @@
+.content-box {
+  width:180vh;
+  height: 500px;
+
+  background: #5da447; /* verde */
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

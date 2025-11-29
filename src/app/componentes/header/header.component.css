@@ -1,0 +1,17 @@
+.header-container {
+  width: 100%;
+  height: 70px; /* tamaño igual al mockup */
+  background: #8a8a8a;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.header-title {
+  font-size: 18px;
+  color: white;
+}
